@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WordCount</title>
+</head>
+<body>
+	<button type="button"><a href="{% url 'about' %}" style="text-decoration: none;">About page</a></button>
+ 	<h1>WORD COUNT</h1>
+	<form action="{% url 'count' %}">
+	  <textarea cols="40" rows="5" name="fulltext"></textarea>	
+	  <br/>
+	  <input type="submit" value="Count!"/>
+	</form>
+
+</body>
+</html>
